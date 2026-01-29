@@ -58,9 +58,7 @@ function HomeHero() {
             </button>
 
             {/* Register/Subscribe Link */}
-            <p className="text-center text-sm text-white">
-              הרשמה / התחברות כעכו
-            </p>
+            <p className="text-center text-sm text-white">הרשמה</p>
           </div>
         </div>
       </div>

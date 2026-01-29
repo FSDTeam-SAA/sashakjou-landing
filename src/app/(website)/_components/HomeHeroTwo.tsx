@@ -59,7 +59,7 @@ function HomeHeroTwo() {
 
             {/* Register/Subscribe Link */}
             <p className="text-center text-sm text-white">
-              הצטרף אלינו כעכו
+              הצטרף אלינו כסוכן
             </p>
           </div>
         </div>
