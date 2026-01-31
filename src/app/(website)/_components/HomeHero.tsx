@@ -21,6 +21,7 @@ function HomeHero() {
   };
 
   const balance = "$20,193";
+  const bonusAmount = "$10,239";
 
   return (
     <section>
@@ -191,7 +192,6 @@ function HomeHero() {
           </div>
         </div>
       </section>
-      
 
       {/* Section of Hero two   */}
       <section className="mt-10">
@@ -361,7 +361,6 @@ function HomeHero() {
         </div>
       </section>
 
-
       {/* Section of Hero three   */}
       <section className="relative mt-10 lg:max-w-[880px] mx-auto">
         <Image
@@ -398,6 +397,104 @@ function HomeHero() {
             className="object-cover w-full h-full roufnded-full"
           />
         </button>
+      </section>
+
+      <section className="mt-10">
+        {/* Hero Four - Mobile */}
+        <div
+          id="bonus-section-mobile"
+          className="block md:hidden relative w-full h-screen overflow-hidden"
+        >
+          {/* Background Image */}
+          <Image
+            src="/images/heroFourPhone.svg"
+            alt="Mobile Hero Background"
+            fill
+            priority
+            className="object-cover"
+          />
+
+          <div className="absolute top-[50%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
+            <p className="text-white text-4xl font-bold text-center">
+              {bonusAmount}
+            </p>
+          </div>
+
+          <div className="absolute top-[60%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
+            <button className=" bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-2xl">
+              טעינת החשבון
+            </button>
+          </div>
+
+          {/* Small Text */}
+          <p className="absolute w-full top-[68%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 text-white text-sm text-center px-4">
+            למשיכת הכספים מהחשבון, יש לפנות לסוכן שלך
+          </p>
+        </div>
+
+        {/* Hero Four - Tablet */}
+        <div
+          id="bonus-section-tablet"
+          className="hidden md:block lg:hidden relative w-full h-screen overflow-hidden"
+        >
+          {/* Background Image */}
+          <Image
+            src="/images/heroFourTab.svg"
+            alt="Tablet Hero Background"
+            fill
+            priority
+            className="object-cover"
+          />
+
+          <div className="absolute top-[50%] left-[38%] transform -translate-x-1/2 -translate-y-1/2">
+            <p className="text-white text-5xl font-bold text-center">
+              {bonusAmount}
+            </p>
+          </div>
+
+          <div className="absolute top-[63%] left-[38%] transform -translate-x-1/2 -translate-y-1/2">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-4 px-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-4xl whitespace-nowrap">
+              טעינת החשבון
+            </button>
+          </div>
+
+          {/* Small Text */}
+          <p className="absolute top-[70%] left-[38%] transform -translate-x-1/2 -translate-y-1/2 text-white text-base text-center">
+            למשיכת הכספים מהחשבון, יש לפנות לסוכן שלך
+          </p>
+        </div>
+
+        {/* Hero Four - Desktop (lg and above) */}
+        <div
+          id="bonus-section-desktop"
+          className="hidden lg:block relative w-full h-screen overflow-hidden lg:max-w-[885px] mx-auto my-10"
+        >
+          {/* Background Image */}
+          <Image
+            src="/images/h5.jpeg"
+            alt="Desktop Hero Background"
+            fill
+            priority
+            className="object-cover"
+          />
+
+          <div className="absolute top-[41%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <p className="text-white text-6xl font-bold text-center">
+              {bonusAmount}
+            </p>
+          </div>
+
+          <div className="absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-4 px-14 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-5xl whitespace-nowrap">
+              טעינת החשבון
+            </button>
+          </div>
+
+          {/* Small Text */}
+          <p className="absolute top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
+            למשיכת הכספים מהחשבון, יש לפנות לסוכן שלך
+          </p>
+        </div>
       </section>
     </section>
   );
