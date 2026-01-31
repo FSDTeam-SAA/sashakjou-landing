@@ -471,27 +471,27 @@ function HomeHero() {
         >
           {/* Background Image */}
           <Image
-            src="/images/h5.jpeg"
+            src="/images/heroFourTab.svg"
             alt="Desktop Hero Background"
             fill
             priority
             className="object-cover"
           />
 
-          <div className="absolute top-[41%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-[50%] left-[38%] transform -translate-x-1/2 -translate-y-1/2">
             <p className="text-white text-6xl font-bold text-center">
               {bonusAmount}
             </p>
           </div>
 
-          <div className="absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-[65%] left-[37%] transform -translate-x-1/2 -translate-y-1/2">
             <button className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-4 px-14 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-5xl whitespace-nowrap">
               טעינת החשבון
             </button>
           </div>
 
           {/* Small Text */}
-          <p className="absolute top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
+          <p className="absolute top-[72%] left-[37%] transform -translate-x-1/2 -translate-y-1/2 text-white">
             למשיכת הכספים מהחשבון, יש לפנות לסוכן שלך
           </p>
         </div>
