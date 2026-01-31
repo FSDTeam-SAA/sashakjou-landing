@@ -12,14 +12,15 @@ function HomeHero() {
     console.log("Login clicked", { username, password });
   };
 
-
   const [usernameReg, setUsernameReg] = useState("");
-    const [passwordReg, setPasswordReg] = useState("");
+  const [passwordReg, setPasswordReg] = useState("");
 
   const handleSubmitRge = () => {
     // Your login logic here
     console.log("Login clicked", { username, password });
   };
+
+  const balance = "$20,193";
 
   return (
     <section>
@@ -190,8 +191,9 @@ function HomeHero() {
           </div>
         </div>
       </section>
+      
 
-    {/* Section of Hero two   */}
+      {/* Section of Hero two   */}
       <section className="mt-10">
         {/* Hero for Mobile (sm and below) */}
         <div className="block md:hidden relative w-full h-screen overflow-hidden">
@@ -207,7 +209,7 @@ function HomeHero() {
           <div className="absolute top-[48%] left-[40.5%] transform -translate-x-1/2 -translate-y-1/2">
             <div className="w-[90%]">
               <h2 className="text-2xl font-bold text-white my-2 text-center">
-          התחברות
+                התחברות
               </h2>
 
               <div className="space-y-4">
@@ -241,7 +243,7 @@ function HomeHero() {
 
                 {/* Register Link */}
                 <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
-          הפטור אינו סוכן
+                  הפטור אינו סוכן
                 </p>
               </div>
             </div>
@@ -357,6 +359,45 @@ function HomeHero() {
             </div>
           </div>
         </div>
+      </section>
+
+
+      {/* Section of Hero three   */}
+      <section className="relative mt-10 lg:max-w-[880px] mx-auto">
+        <Image
+          src="/images/heroThreeMobile.svg"
+          alt="Home Hero"
+          width={1440}
+          height={800}
+          quality={100}
+          priority
+          className="w-full h-auto object-cover"
+        />
+
+        <div className="flex items-center  gap-2 bg-emerald-900 px-3 py-2 rounded-lg absolute top-2 right-3">
+          {/* Yellow Button */}
+          <a href="#bonus-section">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-2 py-1 rounded-lg text-sm transition-all duration-300">
+              היתרה שלי
+            </button>
+          </a>
+
+          {/* Balance Display */}
+          <div className="bg-emerald-700 text-white font-bold px-2 py-1 rounded-lg text-sm">
+            {balance}
+          </div>
+        </div>
+        <button className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 absolute bottom-8 lg:bottom-20 lg:right-14 right-5">
+          {/* Telegram Image */}
+          <Image
+            src="/images/tlgrm.png"
+            alt="Telegram"
+            width={60}
+            height={60}
+            quality={100}
+            className="object-cover w-full h-full roufnded-full"
+          />
+        </button>
       </section>
     </section>
   );
