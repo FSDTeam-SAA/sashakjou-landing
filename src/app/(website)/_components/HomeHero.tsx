@@ -1,67 +1,363 @@
 "use client";
-import React, { useState } from "react";
+
 import Image from "next/image";
+import { useState } from "react";
 
 function HomeHero() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Login attempt:", { username, password });
+  const handleSubmit = () => {
+    // Your login logic here
+    console.log("Login clicked", { username, password });
   };
+
+
+  const [usernameReg, setUsernameReg] = useState("");
+    const [passwordReg, setPasswordReg] = useState("");
+
+  const handleSubmitRge = () => {
+    // Your login logic here
+    console.log("Login clicked", { username, password });
+  };
+
   return (
-    <section className="relative w-full h-screen overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src="/images/hero3.jpeg"
-        alt="Home Hero Background"
-        fill
-        priority
-        className="object-contain"
-      />
+    <section>
+      {/* Section of Hero one  */}
+      <section>
+        {/* Hero for Mobile (sm and below) */}
+        <div className="block md:hidden relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/images/phoneOneHeader.svg"
+            alt="Mobile Hero Background"
+            fill
+            priority
+            className="object-fill"
+          />
 
-      <div className="max-w-sm w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-8 rounded-3xl shadow-lg">
-        {/* Login Card - Transparent Background */}
-        <div className="p-6 rounded-3xl">
-          <h2 className="text-4xl font-bold text-white mb-6 text-center">
-            התחברות
-          </h2>
+          <div className="absolute top-[48%] left-[40.5%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-[90%]">
+              <h2 className="text-2xl font-bold text-white my-2 text-center">
+                התחברות
+              </h2>
 
-          <div className="space-y-4">
-            {/* Username Input */}
-            <input
-              type="text"
-              placeholder="שם משתמש"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-6 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
-              dir="rtl"
-            />
+              <div className="space-y-4">
+                {/* Username Input */}
+                <input
+                  type="text"
+                  placeholder="שם משתמש"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="w-full px-2 py-1 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400"
+                  dir="rtl"
+                />
 
-            {/* Password Input */}
-            <input
-              type="password"
-              placeholder="סיסמה"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-6 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
-              dir="rtl"
-            />
+                {/* Password Input */}
+                <input
+                  type="password"
+                  placeholder="סיסמה"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-2 py-1 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400"
+                  dir="rtl"
+                />
 
-            {/* Submit Button */}
-            <button
-              onClick={handleSubmit}
-              className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-2xl"
-            >
-              כניסה
-            </button>
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-1 px-2 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-xl"
+                >
+                  כניסה
+                </button>
 
-            {/* Register/Subscribe Link */}
-            <p className="text-center text-sm text-white">הרשמה</p>
+                {/* Register Link */}
+                <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
+                  הרשמה
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
+        {/* Hero for Tablet (md to lg) */}
+        <div className="hidden md:block lg:hidden relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/images/padmini.svg"
+            alt="Tablet Hero Background"
+            fill
+            priority
+            className="object-contain"
+          />
+
+          <div className="absolute top-[55.5%] left-[44.5%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-full max-w-md  p-8 ">
+              <h2 className="text-4xl font-bold text-white mb-6 text-center">
+                התחברות
+              </h2>
+
+              <div className="space-y-4">
+                {/* Username Input */}
+                <input
+                  type="text"
+                  placeholder="שם משתמש"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="w-full px-5 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Password Input */}
+                <input
+                  type="password"
+                  placeholder="סיסמה"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-5 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-2xl"
+                >
+                  כניסה
+                </button>
+
+                {/* Register Link */}
+                <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
+                  הרשמה
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero for Desktop (lg and above) */}
+        <div className="hidden lg:block relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/images/hero3.jpeg"
+            alt="Desktop Hero Background"
+            fill
+            priority
+            className="object-contain"
+          />
+
+          <div className="absolute top-1/2 left-[49.7%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-full max-w-[350px] p-8 rounded-3xl shadow-lg">
+              <h2 className="text-4xl font-bold text-white mb-6 text-center">
+                התחברות
+              </h2>
+
+              <div className="space-y-4">
+                {/* Username Input */}
+                <input
+                  type="text"
+                  placeholder="שם משתמש"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="w-full px-6 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Password Input */}
+                <input
+                  type="password"
+                  placeholder="סיסמה"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-6 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-2xl"
+                >
+                  כניסה
+                </button>
+
+                {/* Register Link */}
+                <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
+                  הרשמה
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    {/* Section of Hero two   */}
+      <section className="mt-10">
+        {/* Hero for Mobile (sm and below) */}
+        <div className="block md:hidden relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/images/heroTwoMobile.svg"
+            alt="Mobile Hero Background"
+            fill
+            priority
+            className="object-fill"
+          />
+
+          <div className="absolute top-[48%] left-[40.5%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-[90%]">
+              <h2 className="text-2xl font-bold text-white my-2 text-center">
+          התחברות
+              </h2>
+
+              <div className="space-y-4">
+                {/* Username Input */}
+                <input
+                  type="text"
+                  placeholder="שם משתמש"
+                  value={usernameReg}
+                  onChange={(e) => setUsernameReg(e.target.value)}
+                  className="w-full px-2 py-1 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400"
+                  dir="rtl"
+                />
+
+                {/* Password Input */}
+                <input
+                  type="password"
+                  placeholder="סיסמה"
+                  value={passwordReg}
+                  onChange={(e) => setPasswordReg(e.target.value)}
+                  className="w-full px-2 py-1 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400"
+                  dir="rtl"
+                />
+
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmitRge}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-1 px-2 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-xl"
+                >
+                  כניסה
+                </button>
+
+                {/* Register Link */}
+                <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
+          הפטור אינו סוכן
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero for Tablet (md to lg) */}
+        <div className="hidden md:block lg:hidden relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/images/heroTwoTab.svg"
+            alt="Tablet Hero Background"
+            fill
+            priority
+            className="object-contain"
+          />
+
+          <div className="absolute top-[55.5%] left-[44.5%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-full max-w-md  p-8 ">
+              <h2 className="text-4xl font-bold text-white mb-6 text-center">
+                התחברות
+              </h2>
+
+              <div className="space-y-4">
+                {/* Username Input */}
+                <input
+                  type="text"
+                  placeholder="שם משתמש"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="w-full px-5 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Password Input */}
+                <input
+                  type="password"
+                  placeholder="סיסמה"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-5 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-2xl"
+                >
+                  כניסה
+                </button>
+
+                {/* Register Link */}
+                <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
+                  הרשמה
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero for Desktop (lg and above) */}
+        <div className="hidden lg:block relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/images/home3.jpeg"
+            alt="Desktop Hero Background"
+            fill
+            priority
+            className="object-contain"
+          />
+
+          <div className="absolute top-1/2 left-[49.7%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-full max-w-[350px] p-8 rounded-3xl shadow-lg">
+              <h2 className="text-4xl font-bold text-white mb-6 text-center">
+                התחברות
+              </h2>
+
+              <div className="space-y-4">
+                {/* Username Input */}
+                <input
+                  type="text"
+                  placeholder="שם משתמש"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="w-full px-6 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Password Input */}
+                <input
+                  type="password"
+                  placeholder="סיסמה"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full px-6 py-4 bg-gray-900 text-white text-right rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 text-lg"
+                  dir="rtl"
+                />
+
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl text-2xl"
+                >
+                  כניסה
+                </button>
+
+                {/* Register Link */}
+                <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
+                  הרשמה
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

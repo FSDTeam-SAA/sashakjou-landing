@@ -4,7 +4,7 @@ import Image from "next/image";
 function HomeHeroFour() {
   const bonusAmount = "$10,239";
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section id="bonus-section" className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/h5.jpeg"
