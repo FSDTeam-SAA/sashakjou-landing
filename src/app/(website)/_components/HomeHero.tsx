@@ -324,19 +324,62 @@ function HomeHero() {
       </section>
 
       {/* Section of Hero two   */}
-      <section className="mt-10">
+      <section className="mt-10 ">
         {/* Hero for Mobile (sm and below) */}
         <div className="block md:hidden relative w-full h-screen overflow-hidden">
-          {/* Background Image */}
           <Image
-            src="/images/heroTwoMobile.svg"
-            alt="Mobile Hero Background"
+            src="/images/heroOneBG.svg"
+            alt="Desktop Hero Background"
             fill
             priority
-            className="object-fill"
+            className="object-cover"
           />
 
-          <div className="absolute top-[48%] left-[40.5%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-3 left-16 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={100}
+              width={100}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-[55%] top-[51%] -translate-x-1/2 -translate-y-1/2 w-[330px]">
+            <Image
+              src="/images/HeroTwoMan.svg"
+              alt="image"
+              height={610}
+              width={610}
+              quality={100}
+              className="z-50 w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={120}
+              width={120}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={120}
+              width={120}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[53.5%] left-[45%] transform -translate-x-1/2 -translate-y-1/2">
             <div className="w-[90%]">
               <h2 className="text-2xl font-bold text-white my-2 text-center">
                 התחברות
@@ -382,17 +425,60 @@ function HomeHero() {
 
         {/* Hero for Tablet (md to lg) */}
         <div className="hidden md:block lg:hidden relative w-full h-screen overflow-hidden">
-          {/* Background Image */}
           <Image
-            src="/images/heroTwoTab.svg"
-            alt="Tablet Hero Background"
+            src="/images/heroOneBG.svg"
+            alt="Desktop Hero Background"
             fill
             priority
-            className="object-contain"
+            className="object-cover"
           />
 
-          <div className="absolute top-[55.5%] left-[44.5%] transform -translate-x-1/2 -translate-y-1/2">
-            <div className="w-full max-w-md  p-8 ">
+          <div className="absolute top-5 left-20 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={130}
+              width={130}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-[60%] top-[51%] -translate-x-1/2 -translate-y-1/2 w-[510px]">
+            <Image
+              src="/images/HeroTwoMan.svg"
+              alt="image"
+              height={610}
+              width={610}
+              quality={100}
+              className="z-50 w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[54.5%] left-[49.3%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-full max-w-[350px]  p-8 ">
               <h2 className="text-4xl font-bold text-white mb-6 text-center">
                 התחברות
               </h2>
@@ -439,14 +525,58 @@ function HomeHero() {
         <div className="hidden lg:block relative w-full h-screen overflow-hidden">
           {/* Background Image */}
           <Image
-            src="/images/home3.jpeg"
+            src="/images/heroOneBG.svg"
             alt="Desktop Hero Background"
             fill
             priority
-            className="object-contain"
+            className="object-cover"
           />
 
-          <div className="absolute top-1/2 left-[49.7%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-5 left-20 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={130}
+              width={130}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <Image
+              src="/images/HeroTwoMan.svg"
+              alt="image"
+              height={500}
+              width={500}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[53.3%] left-[45.8%] transform -translate-x-1/2 -translate-y-1/2">
             <div className="w-full max-w-[350px] p-8 rounded-3xl shadow-lg">
               <h2 className="text-4xl font-bold text-white mb-6 text-center">
                 התחברות
@@ -491,42 +621,171 @@ function HomeHero() {
         </div>
       </section>
 
-      {/* Section of Hero three   */}
-      <section className="relative mt-10 lg:max-w-[880px] mx-auto">
-        <Image
-          src="/images/heroThreeMobile.svg"
-          alt="Home Hero"
-          width={1440}
-          height={800}
-          quality={100}
-          priority
-          className="w-full h-auto object-cover"
-        />
-
-        <div className="flex items-center  gap-2 bg-emerald-900 px-3 py-2 rounded-lg absolute top-2 right-3">
-          {/* Yellow Button */}
-          <a href="#bonus-section-mobile">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-2 py-1 rounded-lg text-sm transition-all duration-300">
-              היתרה שלי
-            </button>
-          </a>
-
-          {/* Balance Display */}
-          <div className="bg-emerald-700 text-white font-bold px-2 py-1 rounded-lg text-sm">
-            {balance}
-          </div>
-        </div>
-        <button className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 absolute bottom-8 lg:bottom-20 lg:right-14 right-5">
-          {/* Telegram Image */}
+      <section>
+        <section className="hidden lg:block relative w-full overflow-hidden mt-10">
+          {/* Background Image */}
           <Image
-            src="/images/tlgrm.png"
-            alt="Telegram"
-            width={60}
-            height={60}
+            src="/images/heroOneBG.svg"
+            alt="Hero Background"
+            width={1440}
+            height={800}
             quality={100}
-            className="object-cover w-full h-full roufnded-full"
+            priority
+            className="w-full h-auto"
           />
-        </button>
+
+          {/* Logo */}
+          <div className="absolute top-3 left-16 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={100}
+              width={100}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          {/* Hero Three On */}
+          <div className="absolute top-[2%] left-[28%] w-[220px] sm:w-[300px] md:w-[400px] lg:w-[700px] z-10">
+            <Image
+              src="/images/heroThreeOn.svg"
+              alt="Hero Three On"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
+          {/* Hero Three Two */}
+          <div className="absolute top-[25%] left-1/2 -translate-x-1/2 !w-[90vw] max-w-[600px] z-10 ">
+            <Image
+              src="/images/heroThreeTwo.svg"
+              alt="Hero Three Two"
+              width={500}
+              height={500}
+              className="w-full h-auto "
+              priority
+            />
+          </div>
+
+          {/* Hero Four Image */}
+          <div className="absolute top-[40%] left-1/2 -translate-x-1/2 w-[70vw] max-w-[600px] z-10">
+            <Image
+              src="/images/heroFourimage.svg"
+              alt="Hero Four"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
+          {/* Carousel */}
+          <div className="absolute top-[57%] left-1/2 -translate-x-1/2 w-[90vw] max-w-[700px] z-10">
+            <Image
+              src="/images/carousal.svg"
+              alt="Carousel"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
+          {/* Black Images */}
+          <div className="absolute top-[68%] left-1/2 -translate-x-1/2 w-[90vw] max-w-[700px] z-10">
+            <Image
+              src="/images/black.svg"
+              alt="Black"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
+          <div className="absolute top-[80%] left-1/2 -translate-x-1/2 w-[90vw] max-w-[700px] z-10">
+            <Image
+              src="/images/black.svg"
+              alt="Black"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
+          {/* Balance Box */}
+          <div className="flex items-center gap-2 bg-emerald-900 px-3 py-2 rounded-lg absolute top-4 right-4 z-20">
+            <a href="#bonus-section-mobile">
+              <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-2 py-1 rounded-lg text-sm transition-all duration-300">
+                היתרה שלי
+              </button>
+            </a>
+            <div className="bg-emerald-700 text-white font-bold px-2 py-1 rounded-lg text-sm">
+              {balance}
+            </div>
+          </div>
+
+          {/* Telegram Button */}
+          <button
+            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex items-center justify-center
+               transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105
+               absolute bottom-6 right-4 sm:bottom-10 sm:right-10 lg:bottom-20 lg:right-14 z-20"
+          >
+            <Image
+              src="/images/tlgrm.png"
+              alt="Telegram"
+              width={60}
+              height={60}
+              quality={100}
+              className="object-cover w-full h-full rounded-full"
+            />
+          </button>
+        </section>
+
+        <section className="block lg:hidden w-full relative mt-10">
+          <div className="w-full relative">
+            <Image
+              src="/images/heroFourImage.svg"
+              alt="Hero Image"
+              width={1920}
+              height={1080}
+              quality={100}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+          {/* Balance Box */}
+          <div className="flex items-center gap-2 bg-emerald-900 px-3 py-2 rounded-lg absolute top-4 right-4 z-20">
+            <a href="#bonus-section-mobile">
+              <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-2 py-1 rounded-lg text-sm transition-all duration-300">
+                היתרה שלי
+              </button>
+            </a>
+            <div className="bg-emerald-700 text-white font-bold px-2 py-1 rounded-lg text-sm">
+              {balance}
+            </div>
+          </div>
+
+          {/* Telegram Button */}
+          <button
+            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex items-center justify-center
+               transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105
+               absolute bottom-6 right-4 sm:bottom-10 sm:right-10 lg:bottom-20 lg:right-14 z-20"
+          >
+            <Image
+              src="/images/tlgrm.png"
+              alt="Telegram"
+              width={60}
+              height={60}
+              quality={100}
+              className="object-cover w-full h-full rounded-full"
+            />
+          </button>
+        </section>
       </section>
 
       <section className="mt-10">
@@ -537,20 +796,63 @@ function HomeHero() {
         >
           {/* Background Image */}
           <Image
-            src="/images/heroFourPhone.svg"
-            alt="Mobile Hero Background"
+            src="/images/heroOneBG.svg"
+            alt="Desktop Hero Background"
             fill
             priority
             className="object-cover"
           />
 
+          <div className="absolute top-3 left-16 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={100}
+              width={100}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 w-[330px]">
+            <Image
+              src="/images/lastImage.svg"
+              alt="image"
+              height={610}
+              width={610}
+              quality={100}
+              className="z-50 w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={120}
+              width={120}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={120}
+              width={120}
+              quality={100}
+              className="z-50"
+            />
+          </div>
           <div className="absolute top-[50%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
             <p className="text-white text-4xl font-bold text-center">
               {bonusAmount}
             </p>
           </div>
 
-          <div className="absolute top-[60%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
+          <div className="absolute top-[62%] left-[54%] transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
             <button className=" bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-2xl">
               טעינת החשבון
             </button>
@@ -567,14 +869,57 @@ function HomeHero() {
           id="bonus-section-tablet"
           className="hidden md:block lg:hidden relative w-full h-screen overflow-hidden"
         >
-          {/* Background Image */}
           <Image
-            src="/images/heroFourTab.svg"
-            alt="Tablet Hero Background"
+            src="/images/heroOneBG.svg"
+            alt="Desktop Hero Background"
             fill
             priority
             className="object-cover"
           />
+
+          <div className="absolute top-5 left-20 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={130}
+              width={130}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 w-[510px]">
+            <Image
+              src="/images/lastImage.svg"
+              alt="image"
+              height={610}
+              width={610}
+              quality={100}
+              className="z-50 w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
 
           <div className="absolute top-[50%] left-[38%] transform -translate-x-1/2 -translate-y-1/2">
             <p className="text-white text-5xl font-bold text-center">
@@ -599,24 +944,68 @@ function HomeHero() {
         {/* Hero Four - Desktop (lg and above) */}
         <div
           id="bonus-section-desktop"
-          className="hidden lg:block relative w-full h-screen overflow-hidden lg:max-w-[885px] mx-auto my-10"
+          className="hidden lg:block relative w-full h-screen overflow-hidden"
         >
           {/* Background Image */}
           <Image
-            src="/images/heroFourTab.svg"
+            src="/images/heroOneBG.svg"
             alt="Desktop Hero Background"
             fill
             priority
             className="object-cover"
           />
 
-          <div className="absolute top-[50%] left-[38%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-5 left-20 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={130}
+              width={130}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <Image
+              src="/images/lastImage.svg"
+              alt="image"
+              height={510}
+              width={510}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[50%] left-[45.3%] transform -translate-x-1/2 -translate-y-1/2">
             <p className="text-white text-6xl font-bold text-center">
               {bonusAmount}
             </p>
           </div>
 
-          <div className="absolute top-[65%] left-[37%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-[63%] left-[45%] transform -translate-x-1/2 -translate-y-1/2">
             <button className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-4 px-14 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-5xl whitespace-nowrap">
               טעינת החשבון
             </button>
