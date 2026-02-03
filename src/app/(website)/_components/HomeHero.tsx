@@ -29,22 +29,65 @@ function HomeHero() {
       <section>
         {/* Hero for Mobile (sm and below) */}
         <div className="block md:hidden relative w-full h-screen overflow-hidden">
-          {/* Background Image */}
           <Image
-            src="/images/phoneOneHeader.svg"
-            alt="Mobile Hero Background"
+            src="/images/heroOneBG.svg"
+            alt="Desktop Hero Background"
             fill
             priority
-            className="object-fill"
+            className="object-cover"
           />
 
-          <div className="absolute top-[48%] left-[40.5%] transform -translate-x-1/2 -translate-y-1/2">
-            <div className="w-[90%]">
+          <div className="absolute top-3 left-16 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={100}
+              width={100}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-[55%] top-[51%] -translate-x-1/2 -translate-y-1/2 w-[330px]">
+            <Image
+              src="/images/middleManHeorOne.svg"
+              alt="image"
+              height={610}
+              width={610}
+              quality={100}
+              className="z-50 w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={120}
+              width={120}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={120}
+              width={120}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[54.5%] left-[45%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-[80%]">
               <h2 className="text-2xl font-bold text-white my-2 text-center">
                 התחברות
               </h2>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {/* Username Input */}
                 <input
                   type="text"
@@ -84,17 +127,60 @@ function HomeHero() {
 
         {/* Hero for Tablet (md to lg) */}
         <div className="hidden md:block lg:hidden relative w-full h-screen overflow-hidden">
-          {/* Background Image */}
           <Image
-            src="/images/padmini.svg"
-            alt="Tablet Hero Background"
+            src="/images/heroOneBG.svg"
+            alt="Desktop Hero Background"
             fill
             priority
-            className="object-contain"
+            className="object-cover"
           />
 
-          <div className="absolute top-[55.5%] left-[44.5%] transform -translate-x-1/2 -translate-y-1/2">
-            <div className="w-full max-w-md  p-8 ">
+          <div className="absolute top-5 left-20 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={130}
+              width={130}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-[60%] top-[51%] -translate-x-1/2 -translate-y-1/2 w-[510px]">
+            <Image
+              src="/images/middleManHeorOne.svg"
+              alt="image"
+              height={610}
+              width={610}
+              quality={100}
+              className="z-50 w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[55.5%] left-[47.6%] transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-full max-w-[340px]  p-8 ">
               <h2 className="text-4xl font-bold text-white mb-6 text-center">
                 התחברות
               </h2>
@@ -141,14 +227,58 @@ function HomeHero() {
         <div className="hidden lg:block relative w-full h-screen overflow-hidden">
           {/* Background Image */}
           <Image
-            src="/images/hero3.jpeg"
+            src="/images/heroOneBG.svg"
             alt="Desktop Hero Background"
             fill
             priority
-            className="object-contain"
+            className="object-cover"
           />
 
-          <div className="absolute top-1/2 left-[49.7%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-5 left-20 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="image"
+              height={130}
+              width={130}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <Image
+              src="/images/middleManHeorOne.svg"
+              alt="image"
+              height={510}
+              width={510}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-0">
+            <Image
+              src="/images/bottom.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute -top-3 -right-4">
+            <Image
+              src="/images/top.svg"
+              alt="image"
+              height={220}
+              width={220}
+              quality={100}
+              className="z-50"
+            />
+          </div>
+
+          <div className="absolute top-[55%] left-[45%] transform -translate-x-1/2 -translate-y-1/2">
             <div className="w-full max-w-[350px] p-8 rounded-3xl shadow-lg">
               <h2 className="text-4xl font-bold text-white mb-6 text-center">
                 התחברות
@@ -353,7 +483,7 @@ function HomeHero() {
 
                 {/* Register Link */}
                 <p className="text-center text-sm text-white hover:text-yellow-400 cursor-pointer">
-                  הרשמה
+                  הצטרף אלינו כסוכן
                 </p>
               </div>
             </div>
@@ -375,7 +505,7 @@ function HomeHero() {
 
         <div className="flex items-center  gap-2 bg-emerald-900 px-3 py-2 rounded-lg absolute top-2 right-3">
           {/* Yellow Button */}
-          <a href="#bonus-section">
+          <a href="#bonus-section-mobile">
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-2 py-1 rounded-lg text-sm transition-all duration-300">
               היתרה שלי
             </button>
@@ -453,9 +583,11 @@ function HomeHero() {
           </div>
 
           <div className="absolute top-[63%] left-[38%] transform -translate-x-1/2 -translate-y-1/2">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-4 px-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-4xl whitespace-nowrap">
-              טעינת החשבון
-            </button>
+            <a href="">
+              <button className="bg-yellow-400 hover:bg-yellow-500 text-emerald-900 font-black py-4 px-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-4xl whitespace-nowrap">
+                טעינת החשבון
+              </button>
+            </a>
           </div>
 
           {/* Small Text */}
